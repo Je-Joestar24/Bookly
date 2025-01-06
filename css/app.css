@@ -1,6 +1,29 @@
 @import "./HOME/home.css";
 
 :root {
+  /* Primary Colors */
+  --primary-green: #A8D5BA;
+  --primary-brown: #8B7355;
+  
+  /* Pastel Palette */
+  --pastel-sage: #CDE0C9;
+  --pastel-cream: #F2E8CF;
+  --pastel-moss: #B7C4B7;
+  --pastel-taupe: #D4C5B2;
+  
+  /* Text Colors */
+  --text-dark: #2C3639;
+  --text-light: #F5F5F5;
+  
+  /* Sizes */
+  --container-max-width: 1200px;
+  --section-spacing: 6rem;
+  --element-spacing: 2rem;
+  
+  /* Typography */
+  --h1-size: 3.5rem;
+  --h2-size: 2.5rem;
+  --body-size: 1rem;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
