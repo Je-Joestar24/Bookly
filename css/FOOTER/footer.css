@@ -1,0 +1,121 @@
+.app__footer {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  padding: 3rem var(--element-spacing);
+  margin-top: var(--section-spacing);
+}
+
+.footer__container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer__logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  transition: color 0.3s ease;
+}
+
+.footer__logo:hover {
+  color: var(--pastel-sage);
+}
+
+.footer__description {
+  color: var(--pastel-cream);
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.footer__social-link:hover {
+  background-color: var(--primary-green);
+  transform: translateY(-2px);
+}
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__links-title {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer__link {
+  color: var(--pastel-cream);
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--primary-green);
+}
+
+.footer__bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: var(--pastel-cream);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer__content {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .footer__links {
+    align-items: center;
+  }
+}
+
+/* Subtle animation for social icons */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+.footer__social-link:hover .footer__social-icon {
+  animation: float 1s ease infinite;
+}
