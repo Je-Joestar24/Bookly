@@ -1,5 +1,9 @@
 @import "./HOME_V1/home.css";
+<<<<<<< HEAD
 @import "./FOOTER/footer.css";
+=======
+@import "./NAV/nav.css";
+>>>>>>> 5fe0cbd... feat: Add navigation bar structure
 
 :root {
   /* Primary Colors */
