@@ -1,0 +1,63 @@
+/**
+ * Navigation links styles
+ */
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+/**
+   * Navigation link styles
+   */
+.nav__link {
+  position: relative;
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+/**
+   * Navigation link hover styles
+   */
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-green);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+/**
+   * Navigation link hover styles
+   */
+.nav__link:hover {
+  color: var(--primary-green);
+}
+
+/**
+   * Navigation link hover styles
+   */
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/**
+   * Active navigation link styles
+   */
+.nav__link.active {
+  color: var(--primary-green);
+}
+
+/**
+   * Active navigation link hover styles
+   */
+.nav__link.active::after {
+  transform: scaleX(1);
+}

@@ -1,0 +1,12 @@
+/**
+ * Media query for smaller screens
+ */
+@media (max-width: 768px) {
+  .nav__links {
+    gap: 1rem;
+  }
+
+  .nav__link {
+    padding: 0.5rem;
+  }
+}
