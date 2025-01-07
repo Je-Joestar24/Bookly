@@ -1,0 +1,119 @@
+/**
+ * Navigation bar styles
+ */
+.app__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem var(--element-spacing);
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+/**
+ * Navigation container styles
+ */
+.nav__container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**
+ * Navigation logo styles
+ */
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-brown);
+  transition: transform 0.3s ease;
+}
+
+/**
+ * Navigation logo hover styles
+ */
+.nav__logo:hover {
+  transform: scale(1.05);
+}
+
+/**
+ * Navigation links styles
+ */
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+/**
+ * Navigation link styles
+ */
+.nav__link {
+  position: relative;
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+/**
+ * Navigation link hover styles
+ */
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-green);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+/**
+ * Navigation link hover styles
+ */
+.nav__link:hover {
+  color: var(--primary-green);
+}
+
+/**
+ * Navigation link hover styles
+ */
+.nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/**
+ * Active navigation link styles
+ */
+.nav__link.active {
+  color: var(--primary-green);
+}
+
+/**
+ * Active navigation link hover styles
+ */
+.nav__link.active::after {
+  transform: scaleX(1);
+}
+
+/**
+ * Media query for smaller screens
+ */
+@media (max-width: 768px) {
+  .nav__links {
+    gap: 1rem;
+  }
+
+  .nav__link {
+    padding: 0.5rem;
+  }
+}
