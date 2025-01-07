@@ -1,30 +1,27 @@
-@import "./HOME_V1/home.css";
-<<<<<<< HEAD
-@import "./FOOTER/footer.css";
-=======
 @import "./NAV/nav.css";
->>>>>>> 5fe0cbd... feat: Add navigation bar structure
+@import "./HOME_V1/home.css";
+@import "./FOOTER/footer.css";
 
 :root {
   /* Primary Colors */
-  --primary-green: #A8D5BA;
-  --primary-brown: #8B7355;
-  
+  --primary-green: #a8d5ba;
+  --primary-brown: #8b7355;
+
   /* Pastel Palette */
-  --pastel-sage: #CDE0C9;
-  --pastel-cream: #F2E8CF;
-  --pastel-moss: #B7C4B7;
-  --pastel-taupe: #D4C5B2;
-  
+  --pastel-sage: #cde0c9;
+  --pastel-cream: #f2e8cf;
+  --pastel-moss: #b7c4b7;
+  --pastel-taupe: #d4c5b2;
+
   /* Text Colors */
-  --text-dark: #2C3639;
-  --text-light: #F5F5F5;
-  
+  --text-dark: #2c3639;
+  --text-light: #f5f5f5;
+
   /* Sizes */
   --container-max-width: 1200px;
   --section-spacing: 6rem;
   --element-spacing: 2rem;
-  
+
   /* Typography */
   --h1-size: 3.5rem;
   --h2-size: 2.5rem;
