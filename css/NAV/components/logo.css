@@ -1,0 +1,16 @@
+/**
+ * Navigation logo styles
+ */
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-brown);
+  transition: transform 0.3s ease;
+}
+
+/**
+   * Navigation logo hover styles
+   */
+.nav__logo:hover {
+  transform: scale(1.05);
+}
