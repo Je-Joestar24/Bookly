@@ -14,7 +14,22 @@
   </head>
   <body>
     <div id="app" role="main" aria-label="Book Library at Your Fingertips Application">
-      <nav id="app__nav"></nav>
+      <!-- Navigation V1.0 -->
+      <nav id="app__nav" class="app__nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__container">
+          <a href="#" class="nav__logo" aria-label="Bookly Home">
+            Bookly
+          </a>
+          <ul class="nav__links">
+            <li>
+              <a href="#home" class="nav__link active" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div id="app__display">
         <div id="home" class="app__home">
           <!-- Different sections here -->
