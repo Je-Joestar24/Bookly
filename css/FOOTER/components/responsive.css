@@ -1,0 +1,18 @@
+/*
+ * Media query for responsive design.
+ * Adjusts layout for smaller screens.
+ */
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer__links {
+    align-items: center;
+  }
+}

@@ -1,0 +1,9 @@
+/*
+ * Description text styling within the footer.
+ * Includes color, max-width, and line height.
+ */
+.footer__description {
+  color: var(--pastel-cream);
+  max-width: 400px;
+  line-height: 1.6;
+}

@@ -1,0 +1,12 @@
+/*
+ * Bottom section of the footer.
+ * Includes margin top, padding top, border top, text alignment, color, and font size.
+ */
+.footer__bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: var(--pastel-cream);
+  font-size: 0.9rem;
+}

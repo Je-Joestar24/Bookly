@@ -1,0 +1,33 @@
+/*
+ * Links section within the footer.
+ * Organizes links vertically with a gap.
+ */
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/*
+   * Title for links section within the footer.
+   * Includes color, font size, font weight, and margin bottom.
+   */
+.footer__links-title {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/*
+   * Individual link styling within the footer.
+   * Includes color and transition.
+   */
+.footer__link {
+  color: var(--pastel-cream);
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--primary-green);
+}
