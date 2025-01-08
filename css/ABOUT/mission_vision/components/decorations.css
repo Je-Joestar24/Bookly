@@ -1,0 +1,64 @@
+/**
+ * Image for the mission and vision section.
+ */
+.mission-vision__image {
+  position: relative;
+  height: 500px;
+  opacity: 0;
+  animation: slideInRight 0.8s ease forwards 0.4s;
+}
+
+/* Floating Books Animation */
+/**
+   * Animation for the floating books.
+   */
+.floating-books {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+   * Individual book in the floating books animation.
+   */
+.book {
+  position: absolute;
+  background-color: var(--primary-brown);
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+/**
+   * First book in the floating books animation.
+   */
+.book-1 {
+  width: 120px;
+  height: 160px;
+  top: 20%;
+  left: 20%;
+  animation: float 6s ease-in-out infinite;
+  background-color: var(--primary-green);
+}
+
+/**
+   * Second book in the floating books animation.
+   */
+.book-2 {
+  width: 100px;
+  height: 140px;
+  top: 40%;
+  right: 25%;
+  animation: float 8s ease-in-out infinite 1s;
+}
+
+/**
+   * Third book in the floating books animation.
+   */
+.book-3 {
+  width: 90px;
+  height: 130px;
+  bottom: 25%;
+  left: 35%;
+  animation: float 7s ease-in-out infinite 0.5s;
+  background-color: var(--pastel-taupe);
+}

@@ -1,0 +1,39 @@
+/**
+ * List within each section of the mission and vision content.
+ */
+.mission-vision__list {
+  padding-left: 1.5rem;
+}
+
+/**
+   * Individual item within the list of each section in the mission and vision content.
+   */
+.mission-vision__list li {
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/**
+   * Bullet point before each item in the list of each section in the mission and vision content.
+   */
+.mission-vision__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+}
+
+/**
+   * Hover effect for the list items.
+   */
+.mission-vision__list li:hover::before {
+  transform: translateY(-50%) scale(1.2);
+  transition: transform 0.3s ease;
+}

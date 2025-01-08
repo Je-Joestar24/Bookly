@@ -1,0 +1,36 @@
+/* Responsive Design */
+/**
+ * Responsive design for screens up to 1024px wide.
+ */
+@media (max-width: 1024px) {
+  .mission-vision__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mission-vision__image {
+    height: 300px;
+    order: -1;
+  }
+}
+
+/**
+   * Responsive design for screens up to 768px wide.
+   */
+@media (max-width: 768px) {
+  .mission-vision__wrapper {
+    padding: 4rem 1rem;
+  }
+
+  .mission-vision__text {
+    padding: 2rem;
+  }
+
+  .mission-vision__section h3 {
+    font-size: 1.5rem;
+  }
+
+  .mission-vision__title {
+    font-size: 2rem;
+  }
+}
