@@ -1,0 +1,50 @@
+@import "./components/animations.css";
+@import "./components/responsive.css";
+@import "./components/texts.css";
+@import "./components/card.css";
+
+/**
+ * Styles for the about section wrapper
+ */
+.about__intro-wrapper {
+  background-color: var(--pastel-cream);
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Styles for the about section
+ */
+.about__intro {
+  max-width: var(--container-max-width);
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--text-light);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.8s ease forwards;
+}
+
+/**
+ * Styles for the about section content
+ */
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/**
+ * Styles for the about section features
+ */
+.about__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}

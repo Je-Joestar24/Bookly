@@ -1,0 +1,13 @@
+/* Styles for the step card title */
+.step__card h3 {
+  color: var(--primary-brown);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the step card description */
+.step__card p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}

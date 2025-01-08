@@ -1,5 +1,9 @@
 @import "./intro/intro.css";
+<<<<<<< HEAD
 @import "./mission_vision/mission_vision.css";
+=======
+@import "./steps/steps.css";
+>>>>>>> feature__about
 
 .app__about {
   min-height: 100vh;

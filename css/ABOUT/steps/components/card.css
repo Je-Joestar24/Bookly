@@ -1,0 +1,64 @@
+@import "cardComponents/text.css";
+@import "cardComponents/icon.css";
+@import "cardComponents/number.css";
+
+/* Styles for each step card */
+.step__card {
+  background-color: var(--text-light);
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: calc(var(--step-index, 0) * 0.2s);
+}
+
+/* Hover effect for each step card */
+.step__card:hover {
+  transform: translateY(-10px);
+}
+
+/* Progress line animation for each step card */
+.step__card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-green);
+  bottom: 0;
+  left: 0;
+  transition: width 0.6s ease;
+}
+
+/* Progress line animation on hover */
+.step__card:hover::after {
+  width: 100%;
+}
+
+/* Scale up the step icon on hover */
+.step__card:hover .step__icon {
+  transform: scale(1.1);
+}
+
+/* Custom properties for step indices */
+.step__card:nth-child(1) {
+  --step-index: 1;
+}
+.step__card:nth-child(2) {
+  --step-index: 2;
+}
+.step__card:nth-child(3) {
+  --step-index: 3;
+}
+.step__card:nth-child(4) {
+  --step-index: 4;
+}
+
+/* Focus states for accessibility */
+.step__card:focus-within {
+  outline: 2px solid var(--primary-brown);
+  outline-offset: 4px;
+}

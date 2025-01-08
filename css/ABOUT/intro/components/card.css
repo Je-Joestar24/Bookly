@@ -1,0 +1,56 @@
+/**
+ * Styles for the about section feature card
+ */
+.feature__card {
+  background-color: var(--pastel-sage);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/**
+   * Animation for the about section feature card
+   */
+.feature__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/**
+   * Styles for the about section feature card title
+   */
+.feature__card h3 {
+  color: var(--primary-brown);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/**
+   * Styles for the about section feature card description
+   */
+.feature__card p {
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/**
+   * Styles for the about section mission
+   */
+.about__mission {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--pastel-taupe);
+  border-radius: 15px;
+}
+
+/* Animation for feature cards */
+.feature__card {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: calc(var(--card-index) * 0.2s);
+}
