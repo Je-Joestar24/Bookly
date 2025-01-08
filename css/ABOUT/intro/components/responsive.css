@@ -1,0 +1,22 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about__intro-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .about__intro {
+    padding: 1.5rem;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__description {
+    font-size: 1rem;
+  }
+
+  .feature__card {
+    padding: 1.5rem;
+  }
+}

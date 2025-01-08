@@ -1,0 +1,37 @@
+/**
+ * Styles for the about section title
+ */
+.about__title {
+  color: var(--primary-brown);
+  font-size: var(--h1-size);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/**
+   * Styles for the about section title after pseudo element
+   */
+.about__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-green);
+  border-radius: 2px;
+}
+
+/**
+   * Styles for the about section description
+   */
+.about__description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
