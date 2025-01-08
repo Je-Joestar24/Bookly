@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 @import "./intro/intro.css";
-=======
 @import "./steps/steps.css";
->>>>>>> feature__about
 
 .app__about {
   min-height: 100vh;
