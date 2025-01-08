@@ -1,3 +1,6 @@
 [submodule "css/HOME_V1"]
     path = css/HOME_V1
     url = https://github.com/Je-Joestar24/Bookly__Home-CSS.git
+[submodule "js/views"]
+	path = js/views
+	url = https://github.com/Je-Joestar24/Bookly_js--views
