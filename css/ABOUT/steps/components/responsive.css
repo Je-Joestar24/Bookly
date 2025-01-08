@@ -1,0 +1,46 @@
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+  .steps__container::before {
+    display: none;
+  }
+
+  .step__card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps__wrapper {
+    padding: 4rem 1rem;
+  }
+
+  .steps__title {
+    font-size: 2rem;
+  }
+
+  .step__card {
+    padding: 1.5rem;
+  }
+
+  .step__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .step__icon svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .step__card {
+    background-color: var(--text-dark);
+  }
+
+  .step__card p {
+    color: var(--text-light);
+  }
+}
