@@ -1,0 +1,7 @@
+@import "./intro/intro.css";
+@import "./mission_vision/mission_vision.css";
+
+.app__about {
+  min-height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,301 @@
+/**
+ * Wrapper for the mission and vision section.
+ */
+.mission-vision__wrapper {
+  background-color: var(--pastel-sage);
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Main container for the mission and vision content.
+ */
+.mission-vision {
+  max-width: var(--container-max-width);
+  width: 100%;
+}
+
+/**
+ * Title for the mission and vision section.
+ */
+.mission-vision__title {
+  color: var(--primary-brown);
+  font-size: var(--h2-size);
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/**
+ * Line after the title for the mission and vision section.
+ */
+.mission-vision__title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-green);
+  border-radius: 2px;
+}
+
+/**
+ * Grid layout for the mission and vision content.
+ */
+.mission-vision__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/**
+ * Text content for the mission and vision section.
+ */
+.mission-vision__text {
+  background-color: var(--text-light);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: slideInLeft 0.8s ease forwards 0.2s;
+}
+
+/**
+ * Individual section within the mission and vision content.
+ */
+.mission-vision__section {
+  margin-bottom: 2.5rem;
+}
+
+/**
+ * Title for each section within the mission and vision content.
+ */
+.mission-vision__section h3 {
+  color: var(--primary-brown);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/**
+ * Text content for each section within the mission and vision content.
+ */
+.mission-vision__section p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/**
+ * List within each section of the mission and vision content.
+ */
+.mission-vision__list {
+  padding-left: 1.5rem;
+}
+
+/**
+ * Individual item within the list of each section in the mission and vision content.
+ */
+.mission-vision__list li {
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/**
+ * Bullet point before each item in the list of each section in the mission and vision content.
+ */
+.mission-vision__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+}
+
+/**
+ * Image for the mission and vision section.
+ */
+.mission-vision__image {
+  position: relative;
+  height: 500px;
+  opacity: 0;
+  animation: slideInRight 0.8s ease forwards 0.4s;
+}
+
+/* Floating Books Animation */
+/**
+ * Animation for the floating books.
+ */
+.floating-books {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Individual book in the floating books animation.
+ */
+.book {
+  position: absolute;
+  background-color: var(--primary-brown);
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+/**
+ * First book in the floating books animation.
+ */
+.book-1 {
+  width: 120px;
+  height: 160px;
+  top: 20%;
+  left: 20%;
+  animation: float 6s ease-in-out infinite;
+  background-color: var(--primary-green);
+}
+
+/**
+ * Second book in the floating books animation.
+ */
+.book-2 {
+  width: 100px;
+  height: 140px;
+  top: 40%;
+  right: 25%;
+  animation: float 8s ease-in-out infinite 1s;
+}
+
+/**
+ * Third book in the floating books animation.
+ */
+.book-3 {
+  width: 90px;
+  height: 130px;
+  bottom: 25%;
+  left: 35%;
+  animation: float 7s ease-in-out infinite 0.5s;
+  background-color: var(--pastel-taupe);
+}
+
+/* Animations */
+/**
+ * Animation for the floating effect.
+ */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/**
+ * Animation for the fade in effect.
+ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/**
+ * Animation for the slide in from the left effect.
+ */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/**
+ * Animation for the slide in from the right effect.
+ */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+/**
+ * Responsive design for screens up to 1024px wide.
+ */
+@media (max-width: 1024px) {
+  .mission-vision__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mission-vision__image {
+    height: 300px;
+    order: -1;
+  }
+}
+
+/**
+ * Responsive design for screens up to 768px wide.
+ */
+@media (max-width: 768px) {
+  .mission-vision__wrapper {
+    padding: 4rem 1rem;
+  }
+
+  .mission-vision__text {
+    padding: 2rem;
+  }
+
+  .mission-vision__section h3 {
+    font-size: 1.5rem;
+  }
+
+  .mission-vision__title {
+    font-size: 2rem;
+  }
+}
+
+/* Hover Effects */
+/**
+ * Hover effect for the text content.
+ */
+.mission-vision__text:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/**
+ * Hover effect for the list items.
+ */
+.mission-vision__list li:hover::before {
+  transform: translateY(-50%) scale(1.2);
+  transition: transform 0.3s ease;
+}
