@@ -1,0 +1,25 @@
+/* Styles for the steps title underline */
+.steps__title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-green);
+  border-radius: 2px;
+}
+
+/* Styles for the steps container progress line */
+.steps__container::before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-green);
+  opacity: 0.3;
+  z-index: 1;
+}
