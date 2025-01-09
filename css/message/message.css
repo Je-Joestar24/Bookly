@@ -1,0 +1,37 @@
+@import "./components/animations.css";
+@import "./components/types.css";
+@import "./components/responsive.css";
+
+
+.app__message {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  min-width: 300px;
+  padding: 1rem 1.5rem;
+  background: var(--text-light);
+  border-left: 4px solid var(--primary-green);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+
+  /* Animation for entrance */
+  animation: slideIn 0.3s ease-out;
+
+  /* Text styling */
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+
+  /* Ensure proper spacing */
+  margin: 0;
+
+  /* Optional: Add backdrop blur for modern look */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Exit animation class */
+.fade-out {
+  animation: fadeOut 0.3s ease-out forwards;
+}

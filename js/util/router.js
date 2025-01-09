@@ -5,7 +5,7 @@
  */
 import Home from '../views/home.js';
 import About from '../views/about.js';
-
+import { actions } from './state.js';
 
 export class Router {
 
@@ -47,7 +47,8 @@ export class Router {
             return {
                 route: route,
                 isMatch: location.hash === route.path,
-                id: route.id ? route.id : ''
+                id: route.id ? route.id : '',
+                message: route.message
             }
         });
 
@@ -59,6 +60,8 @@ export class Router {
             match = {
                 route: this.routes[0], // Default to home route
                 isMatch: true,
+                id: 'home-nav',
+                message: "HOME"
             };
         }
 
@@ -66,6 +69,11 @@ export class Router {
         const view = new match.route.view();
         this.displayArea.innerHTML = await view.getHtml();
         if (view.bindAll) await view.bindAll();
+
+        /* set active nav */
+        actions.setActiveNavigation(match.id, 'active')
+        /* Display message */
+        actions.displayMessage(match.message, 750);
 
         // Reset scroll position to top after route change
         window.scrollTo({

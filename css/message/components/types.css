@@ -1,0 +1,16 @@
+/* Different message types */
+.app__message.success {
+  border-left-color: var(--primary-green);
+}
+
+.app__message.error {
+  border-left-color: var(--primary-brown);
+}
+
+.app__message.warning {
+  border-left-color: var(--pastel-moss);
+}
+
+.app__message.info {
+  border-left-color: var(--pastel-sage);
+}
