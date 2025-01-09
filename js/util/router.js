@@ -47,7 +47,8 @@ export class Router {
             return {
                 route: route,
                 isMatch: location.hash === route.path,
-                id: route.id ? route.id : ''
+                id: route.id ? route.id : '',
+                message: route.message
             }
         });
 
@@ -59,7 +60,8 @@ export class Router {
             match = {
                 route: this.routes[0], // Default to home route
                 isMatch: true,
-                id: 'home-nav'
+                id: 'home-nav',
+                message: "HOME"
             };
         }
 
@@ -70,6 +72,8 @@ export class Router {
 
         /* set active nav */
         actions.setActiveNavigation(match.id, 'active')
+        /* Display message */
+        actions.displayMessage(match.message, 750);
 
         // Reset scroll position to top after route change
         window.scrollTo({
