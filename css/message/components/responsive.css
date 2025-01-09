@@ -1,0 +1,10 @@
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .app__message {
+    min-width: auto;
+    width: calc(100% - 4rem);
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+  }
+}
