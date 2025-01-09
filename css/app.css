@@ -2,6 +2,7 @@
 @import "./HOME_V1/home.css";
 @import "./ABOUT/about.css";
 @import "./FOOTER/footer.css";
+@import "./MESSAGE/message.css";
 
 :root {
   /* Primary Colors */
