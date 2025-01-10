@@ -4,3 +4,6 @@
 [submodule "js/views"]
 	path = js/views
 	url = https://github.com/Je-Joestar24/Bookly_js--views
+[submodule "js/templates"]
+	path = js/templates
+	url = https://github.com/Je-Joestar24/Bookly_js--templates
