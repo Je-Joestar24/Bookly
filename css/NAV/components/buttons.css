@@ -1,0 +1,82 @@
+/**
+ * Styles for the navigation authentication section
+ */
+.nav__auth {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/**
+ * Base styles for buttons
+ */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: var(--body-size);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/**
+ * Styles for primary buttons
+ */
+.btn--primary {
+    background-color: var(--primary-green);
+    color: var(--text-dark);
+    border: 2px solid var(--primary-green);
+}
+
+/**
+ * Hover styles for primary buttons
+ */
+.btn--primary:hover {
+    background-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(168, 213, 186, 0.2);
+}
+
+/**
+ * Styles for secondary buttons
+ */
+.btn--secondary {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--primary-green);
+}
+
+/**
+ * Hover styles for secondary buttons
+ */
+.btn--secondary:hover {
+    background-color: var(--pastel-sage);
+    transform: translateY(-2px);
+}
+
+/**
+ * Animation for buttons
+ */
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+/**
+ * Animation on hover for buttons
+ */
+.btn:hover::after {
+    left: 100%;
+}
