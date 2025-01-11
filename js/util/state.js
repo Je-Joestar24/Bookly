@@ -3,6 +3,14 @@
  * Currently, it's an empty object but can be extended as needed.
  */
 const state = {
+    user: JSON.parse(sessionStorage.getItem("user")) || {
+        isLoggedIn: false,
+        name: "",
+        email: "",
+        favorites: [],
+    },
+    // Users data retrieved from local storage, defaulting to an empty array if not found
+    users: JSON.parse(localStorage.getItem("users")) || [],
 };
 
 /**
