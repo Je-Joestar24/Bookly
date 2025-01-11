@@ -1,0 +1,20 @@
+/*
+ * Styles for the input fields within the signup modal form.
+ * Includes padding, border, border radius, font size, and transition.
+ */
+.signup-input {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--pastel-sage);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/*
+ * Styles for the input fields on focus.
+ * Includes outline, border color, and transition.
+ */
+.signup-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}

@@ -1,0 +1,28 @@
+/*
+ * Styles for the login text within the signup modal.
+ * Includes text alignment, margin top, color, and font size.
+ */
+.signup-modal__login-text {
+  text-align: center;
+  margin-top: 1.2rem;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+/*
+ * Styles for the login link within the signup modal.
+ * Includes color, font weight, and transition.
+ */
+.login-link {
+  color: var(--primary-brown);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/*
+ * Styles for the login link on hover.
+ * Includes color.
+ */
+.login-link:hover {
+  color: var(--pastel-taupe);
+}

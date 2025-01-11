@@ -1,0 +1,29 @@
+/*
+ * Styles for the form within the signup modal.
+ * Includes display, flex direction, and gap for layout.
+ */
+.signup-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/*
+ * Styles for the form groups within the signup modal form.
+ * Includes display, flex direction, and gap for layout.
+ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/*
+ * Styles for the labels within the form groups.
+ * Includes color, font size, and font weight.
+ */
+.form-group label {
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
