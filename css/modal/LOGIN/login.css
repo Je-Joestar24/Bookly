@@ -1,0 +1,55 @@
+@import "components/animations.css";
+@import "components/close.css";
+@import "components/form.css";
+@import "components/input.css";
+@import "components/login.css";
+@import "components/signup.css";
+
+/* Styles for the login modal container */
+.app__login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Styles for the open state of the login modal */
+.app__login-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the login modal contents */
+.login-modal__contents {
+  position: relative;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Styles for the open state of the login modal contents */
+.app__login-modal.open .login-modal__contents {
+  transform: translateY(0);
+}
+
+/* Styles for the login modal title */
+.login-modal__title {
+  color: var(--text-dark);
+  font-size: var(--h2-size);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+/* Styles for the login input */
+.login-input {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--pastel-sage);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for the login input */
+.login-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}

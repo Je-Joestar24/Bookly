@@ -1,0 +1,32 @@
+/* Close Button Styles */
+.login-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--pastel-sage);
+  border: none;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+
+/* Hover state for the close button */
+.login-modal__close:hover {
+  background: var(--primary-green);
+  transform: rotate(90deg);
+}
+
+/* Focus state for the close button */
+.login-modal__close:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-brown);
+}

@@ -1,0 +1,17 @@
+/* Styles for the login submit button */
+.login-submit {
+  background-color: var(--primary-green);
+  color: var(--text-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover state for the login submit button */
+.login-submit:hover {
+  background-color: var(--pastel-sage);
+  transform: translateY(-2px);
+}

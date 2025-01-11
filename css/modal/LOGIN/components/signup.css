@@ -1,0 +1,20 @@
+/* Styles for the signup text */
+.login-modal__signup-text {
+  text-align: center;
+  margin-top: 1.2rem;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+/* Styles for the signup link */
+.signup-link {
+  color: var(--primary-brown);
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover state for the signup link */
+.signup-link:hover {
+  color: var(--pastel-taupe);
+}
