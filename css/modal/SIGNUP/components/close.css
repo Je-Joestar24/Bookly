@@ -1,0 +1,42 @@
+/* Close Button Styles */
+/*
+ * Styles for the close button of the signup modal.
+ * Includes position, padding, border radius, width, height, background, border, color, font size, line height, cursor, display, align items, justify content, transition, and z-index.
+ */
+.signup-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--pastel-sage);
+  border: none;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+
+/*
+ * Styles for the close button on hover.
+ * Includes background color and transform.
+ */
+.signup-modal__close:hover {
+  background: var(--primary-green);
+  transform: rotate(90deg);
+}
+
+/*
+ * Styles for the close button on focus.
+ * Includes outline and box shadow.
+ */
+.signup-modal__close:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-brown);
+}

@@ -1,0 +1,23 @@
+/*
+ * Styles for the submit button within the signup modal form.
+ * Includes background color, color, padding, border radius, font size, font weight, margin top, and transition.
+ */
+.signup-submit {
+  background-color: var(--primary-green);
+  color: var(--text-dark);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/*
+ * Styles for the submit button on hover.
+ * Includes background color and transform.
+ */
+.signup-submit:hover {
+  background-color: var(--pastel-sage);
+  transform: translateY(-2px);
+}

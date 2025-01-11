@@ -3,6 +3,7 @@
 @import "./ABOUT/about.css";
 @import "./FOOTER/footer.css";
 @import "./MESSAGE/message.css";
+@import "./MODAL/modal.css";
 
 :root {
   /* Primary Colors */
