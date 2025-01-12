@@ -5,16 +5,18 @@
  */
 import Home from '../views/home.js';
 import About from '../views/about.js';
-import { actions } from './state.js';
+import NotFound from '../views/notFound.js';
+import { actions, state } from './state.js';
 
 export class Router {
 
 
     constructor(displayID) {
         this.routes = [
+            { path: '#/404', view: NotFound, id: '', message: '404 Error not found!' },
             { path: '#/', view: Home, id: 'home-nav', message: 'HOME PAGE' },
             { path: '#/about', view: About, id: 'about-nav', message: 'ABOUT PAGE' },
-        ];
+        ]
         this.displayArea = document.querySelector(displayID);
     }
 
@@ -56,12 +58,12 @@ export class Router {
         let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
 
         if (!match) {
-            location.hash = '#/';
+            location.hash = '#/404';
             match = {
                 route: this.routes[0], // Default to home route
                 isMatch: true,
-                id: 'home-nav',
-                message: "HOME"
+                id: '404',
+                message: '404 Error not found!'
             };
         }
 
@@ -71,7 +73,7 @@ export class Router {
         if (view.bindAll) await view.bindAll();
 
         /* set active nav */
-        actions.setActiveNavigation(match.id, 'active')
+        if (match.id) actions.setActiveNavigation(match.id, 'active')
         /* Display message */
         actions.displayMessage(match.message, 750);
 

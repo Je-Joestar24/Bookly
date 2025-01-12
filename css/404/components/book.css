@@ -1,0 +1,39 @@
+/*
+ * .not-found__book class styles the book container within the .not-found__content container.
+ * It sets position to relative, width to 120px, height to 160px, margin to 2rem auto, and perspective to 1000px.
+ */
+.not-found__book {
+  position: relative;
+  width: 120px;
+  height: 160px;
+  margin: 2rem auto;
+  perspective: 1000px;
+}
+
+/*
+ * .book__page class styles the book page elements within the .not-found__book container.
+ * It sets position to absolute, width and height to 100%, background color to var(--primary-green),
+ * border radius to 2px 10px 10px 2px, transform origin to left center, and transform style to preserve-3d.
+ */
+.book__page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-green);
+  border-radius: 2px 10px 10px 2px;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+}
+.book__page:nth-child(1) {
+  animation: flipPage1 4s ease-in-out infinite;
+}
+
+.book__page:nth-child(2) {
+  background: var(--pastel-sage);
+  animation: flipPage2 4s ease-in-out infinite;
+}
+
+.book__page:nth-child(3) {
+  background: var(--pastel-moss);
+  animation: flipPage3 4s ease-in-out infinite;
+}

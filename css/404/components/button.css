@@ -1,0 +1,26 @@
+/*
+ * .not-found__button class styles the button element within the .not-found__content container.
+ * It sets display to inline-block, padding to 1rem 2rem, background color to var(--primary-green),
+ * color to var(--text-dark), border radius to 8px, font weight to 500, transition to all 0.3s ease,
+ * and applies the fadeInUp animation.
+ */
+.not-found__button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-green);
+  color: var(--text-dark);
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+/*
+ * .not-found__button:hover styles the button on hover.
+ * It sets background color to var(--pastel-sage), transform to translateY(-2px), and box shadow.
+ */
+.not-found__button:hover {
+  background-color: var(--pastel-sage);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

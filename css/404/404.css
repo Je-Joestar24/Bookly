@@ -1,0 +1,19 @@
+@import "components/button.css";
+@import "components/book.css";
+@import "components/texts.css";
+@import "components/animations.css";
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pastel-cream);
+  padding: 2rem;
+}
+
+.not-found__content {
+  text-align: center;
+  max-width: 600px;
+  animation: fadeIn 0.8s ease-out;
+}

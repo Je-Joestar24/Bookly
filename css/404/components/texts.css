@@ -1,0 +1,24 @@
+/*
+ * .not-found__title class styles the title element within the .not-found__content container.
+ * It sets font size to 8rem, color to var(--primary-brown), margin bottom to 2rem, font weight to 700,
+ * text shadow to var(--pastel-taupe), and applies the float animation.
+ */
+.not-found__title {
+  font-size: 8rem;
+  color: var(--primary-brown);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 4px 4px 0px var(--pastel-taupe);
+  animation: float 6s ease-in-out infinite;
+}
+
+/*
+ * .not-found__text class styles the text element within the .not-found__content container.
+ * It sets color to var(--text-dark), font size to 1.5rem, margin to 2rem 0, and applies the fadeInUp animation.
+ */
+.not-found__text {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
