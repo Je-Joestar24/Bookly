@@ -1,0 +1,26 @@
+/* Styles for the book title */
+.book-card__title {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Styles for the book author */
+.book-card__author {
+  color: var(--text-dark);
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the book type label */
+.book-card__type {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: var(--pastel-sage);
+  color: var(--text-dark);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}

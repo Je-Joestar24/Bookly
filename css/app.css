@@ -1,10 +1,12 @@
 @import "./NAV/nav.css";
 @import "./HOME_V1/home.css";
 @import "./ABOUT/about.css";
+@import "./BOOKS/books.css";
 @import "./FOOTER/footer.css";
 @import "./MESSAGE/message.css";
 @import "./MODAL/modal.css";
 @import "./404/404.css";
+
 
 :root {
   /* Primary Colors */

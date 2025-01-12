@@ -1,0 +1,32 @@
+/* Styles for the search container */
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+/* Styles for the search input field */
+.search-input {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  border: 2px solid var(--pastel-sage);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Styles for the search input field when focused */
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(168, 213, 186, 0.2);
+}
+
+/* Styles for the search icon */
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dark);
+  opacity: 0.5;
+}

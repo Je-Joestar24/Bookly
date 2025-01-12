@@ -1,0 +1,65 @@
+/* Styles for each action button */
+.action-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+}
+
+/* Styles for each action button on hover */
+.book-card:hover .action-btn {
+  transform: translateY(0);
+}
+
+/* Styles for each action button on hover */
+.action-btn:hover {
+  background: var(--primary-green);
+  transform: translateY(-5px);
+}
+
+/* Styles for the favorite button */
+.favorite-btn {
+  transition-delay: 0.1s;
+}
+
+/* Styles for the read button */
+.read-btn {
+  transition-delay: 0.2s;
+}
+
+/* Styles for the action button icon */
+.action-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+/* Styles for the action button icon on hover */
+.action-btn:hover svg {
+  color: var(--text-dark);
+  transform: scale(1.1);
+}
+
+/* Active states for buttons */
+.favorite-btn.active {
+  background: var(--primary-green);
+}
+
+.favorite-btn.active svg {
+  fill: var(--text-dark);
+}
+
+.read-btn.active {
+  background: var(--primary-green);
+}
+
+.read-btn.active svg {
+  color: var(--text-dark);
+}

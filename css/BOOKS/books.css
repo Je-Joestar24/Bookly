@@ -1,0 +1,57 @@
+@import "components/card.css";
+@import "components/header.css";
+@import "components/search.css";
+@import "components/sort.css";
+
+/* Styles for the container that holds all the books */
+.books-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 5em;
+}
+
+/* Styles for the controls section that includes search and sort options */
+.books-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Styles for the grid that displays the books */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Animation for the book cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .books-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .sort-select {
+    width: 100%;
+  }
+}

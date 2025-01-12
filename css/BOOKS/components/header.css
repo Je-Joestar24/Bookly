@@ -1,0 +1,10 @@
+.books-header {
+  margin-bottom: 3rem;
+}
+
+.books-title {
+  color: var(--text-dark);
+  font-size: var(--h1-size);
+  margin-bottom: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+/* Styles for the sort select dropdown */
+.sort-select {
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  border: 2px solid var(--pastel-sage);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Styles for the sort select dropdown when focused */
+.sort-select:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(168, 213, 186, 0.2);
+}
