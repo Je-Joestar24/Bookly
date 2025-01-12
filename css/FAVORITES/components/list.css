@@ -1,0 +1,27 @@
+@import "listComponents/item.css";
+@import "listComponents/cover.css";
+@import "listComponents/buttons.css";
+@import "listComponents/texts.css";
+
+/* List of favorite items */
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Content section of the favorite item */
+.favorite-item__content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Actions section of the favorite item */
+.favorite-item__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}

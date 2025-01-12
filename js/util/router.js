@@ -7,6 +7,7 @@ import Home from '../views/home.js';
 import About from '../views/about.js';
 import NotFound from '../views/notFound.js';
 import Books from '../views/books.js';
+import Favorites from '../views/favorites.js';
 import { actions, state } from './state.js';
 
 export class Router {
@@ -18,6 +19,7 @@ export class Router {
             { path: '#/', view: Home, id: 'home-nav', message: 'HOME PAGE' },
             { path: '#/about', view: About, id: 'about-nav', message: 'ABOUT PAGE' },
             { path: '#/books', view: Books, id: '', message: 'BOOKS PAGE' },
+            { path: '#/favorites', view: Favorites, id: '', message: 'FAVORITES PAGE' },
         ]
         this.displayArea = document.querySelector(displayID);
     }

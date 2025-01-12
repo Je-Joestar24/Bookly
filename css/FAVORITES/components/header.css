@@ -1,0 +1,12 @@
+/* Header section for the favorites */
+.favorites-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Title for the favorites section */
+.favorites-title {
+  color: var(--text-dark);
+  font-size: var(--h1-size);
+  margin-bottom: 0.5rem;
+}
