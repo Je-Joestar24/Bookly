@@ -1,0 +1,27 @@
+/* Profile Section */
+.profile-container {
+  position: relative;
+}
+
+.profile-trigger {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--pastel-sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.profile-trigger:hover {
+  background-color: var(--primary-green);
+  transform: scale(1.05);
+}
+
+.profile-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-dark);
+}

@@ -3,6 +3,8 @@
 @import "components/links.css";
 @import "components/buttons.css";
 
+@import "logged.css";
+
 /**
  * Navigation bar styles
  */
