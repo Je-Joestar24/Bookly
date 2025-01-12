@@ -1,16 +1,16 @@
 /* Different message types */
 .app__message.success {
-  border-left-color: var(--primary-green);
+  border-left-color: #4CAF50; /* Green */
 }
 
 .app__message.error {
-  border-left-color: var(--primary-brown);
+  border-left-color: #f44336; /* Red */
 }
 
 .app__message.warning {
-  border-left-color: var(--pastel-moss);
+  border-left-color: #ff9800; /* Yellow */
 }
 
 .app__message.info {
-  border-left-color: var(--pastel-sage);
+  border-left-color: #007bff; /* Blue */
 }

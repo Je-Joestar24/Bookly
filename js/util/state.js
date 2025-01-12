@@ -111,9 +111,12 @@ const actions = {
      * @param {string} message - The message to display.
      * @param {number} custom - Optional. The duration in milliseconds before the message fades out. Defaults to 10.
      */
-    displayMessage(message, custom = 10) {
+    displayMessage(message, custom = 10, type = 'info') {
         const message_display = document.querySelector('#app__message');
-        message_display.classList.remove('fade-out');
+        ['fade-out', 'error', 'success', 'warning', 'info'].forEach(className => {
+            message_display.classList.remove(className);
+        });
+        message_display.classList.add(type);
         message_display.innerHTML = message;
         setTimeout(() => {
             message_display.classList.add('fade-out');
