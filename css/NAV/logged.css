@@ -1,0 +1,30 @@
+@import "loggedComponents/logout.css";
+@import "loggedComponents/profile.css";
+@import "loggedComponents/navlinks.css";
+@import "loggedComponents/dropdown.css";
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 1em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 1rem;
+  }
+
+  .nav-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .profile-dropdown {
+    width: 220px;
+  }
+}

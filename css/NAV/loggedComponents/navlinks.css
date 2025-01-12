@@ -1,0 +1,27 @@
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: var(--pastel-cream);
+}
+
+.nav-button:hover {
+  background-color: var(--primary-green);
+  transform: translateY(-2px);
+}
+
+.nav-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
