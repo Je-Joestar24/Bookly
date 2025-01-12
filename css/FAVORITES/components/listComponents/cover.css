@@ -1,0 +1,22 @@
+/* Cover image for the favorite item */
+.favorite-item__cover {
+  flex-shrink: 0;
+  width: 120px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--pastel-cream);
+}
+
+/* Image inside the cover */
+.favorite-item__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the cover image */
+.favorite-item:hover .favorite-item__cover img {
+  transform: scale(1.05);
+}

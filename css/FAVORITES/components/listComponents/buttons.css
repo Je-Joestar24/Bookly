@@ -1,0 +1,42 @@
+/* Action button */
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 10em;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Icon for the action button */
+.action-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Read button */
+.read-btn {
+  background-color: var(--pastel-sage);
+  color: var(--text-dark);
+}
+
+/* Hover effect for the read button */
+.read-btn:hover {
+  background-color: var(--primary-green);
+  transform: translateX(5px);
+}
+
+/* Remove button */
+.remove-btn {
+  background-color: var(--pastel-cream);
+  color: var(--text-dark);
+}
+
+/* Hover effect for the remove button */
+.remove-btn:hover {
+  background-color: #ffebeb;
+  color: #e63946;
+  transform: translateX(5px);
+}
