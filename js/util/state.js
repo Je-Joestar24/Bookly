@@ -15,7 +15,10 @@ const state = {
             password: 'pass',
             favorites: [],
         }
-    ],
+    ],books: {
+        binded: false,
+        books: []
+    }
 };
 
 /**
