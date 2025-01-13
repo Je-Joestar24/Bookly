@@ -1,0 +1,55 @@
+@import "emptyComponents/button.css";
+@import "emptyComponents/responsive.css";
+@import "emptyComponents/texts.css";
+@import "emptyComponents/icon.css";
+
+
+/* 
+    This is the style for the empty state of the favorites view.
+    It is a flex container with a column direction, centered items, and a white background.
+    The container has a border radius, box shadow, and a maximum width of 600px.
+    It also has a fadeIn animation.
+*/
+.favorites-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 2rem auto;
+  max-width: 600px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 
+    This is the fadeIn animation.
+    It starts with an opacity of 0 and a translateY transform of 20px, and ends with an opacity of 1 and a translateY transform of 0.
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 
+    This is the float animation.
+    It starts and ends with a translateY transform of 0, and at 50% it has a translateY transform of -20px.
+*/
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

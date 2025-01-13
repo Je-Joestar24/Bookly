@@ -1,0 +1,21 @@
+/* 
+    This is the style for the icon in the empty state.
+    It is a 120px by 120px square with a pastel-sage color and a floating animation.
+*/
+.favorites-empty__icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2rem;
+  color: var(--pastel-sage);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* 
+    This is the style for the SVG inside the icon.
+    It is a 100% by 100% square with a stroke width of 1.5.
+*/
+.favorites-empty__icon svg {
+  width: 100%;
+  height: 100%;
+  stroke-width: 1.5;
+}

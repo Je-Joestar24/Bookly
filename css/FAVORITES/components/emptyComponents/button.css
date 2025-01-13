@@ -1,0 +1,35 @@
+/* 
+    This is the style for the button in the empty state.
+    It is a flex container with centered items, a primary-green background, and a dark text.
+    The button has a border radius, font weight, and a transition effect.
+*/
+.favorites-empty__button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  background-color: var(--primary-green);
+  color: var(--text-dark);
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* 
+    This is the hover style for the button in the empty state.
+    It changes the background color, adds a translateY transform, and a box shadow on hover.
+*/
+.favorites-empty__button:hover {
+  background-color: var(--pastel-sage);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+    This is the style for the icon inside the button.
+    It is a 1.2rem by 1.2rem square.
+*/
+.button-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}

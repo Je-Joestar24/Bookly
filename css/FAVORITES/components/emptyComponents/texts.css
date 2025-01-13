@@ -1,0 +1,23 @@
+/* 
+    This is the style for the title in the empty state.
+    It is a dark text with a font size of 2rem and a margin bottom of 1rem.
+*/
+.favorites-empty__title {
+  color: var(--text-dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* 
+    This is the style for the text in the empty state.
+    It is a dark text with an opacity of 0.7, a font size of 1.1rem, and a line height of 1.6.
+*/
+.favorites-empty__text {
+  color: var(--text-dark);
+  opacity: 0.7;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
