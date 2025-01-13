@@ -86,6 +86,42 @@ const mutations = {
     logout: () => {
         state.user = { isLoggedIn: false, email: "" };
         sessionStorage.clear();
+    },
+    toggleFavorite: async (book) => {
+        if (!state.user.isLoggedIn) {
+            console.error("User is not logged in.");
+            return;
+        }
+
+        // Check if the book is already in the user's favorites
+        const isFavorite = state.user.favorites.some(favorite => favorite.id === book.id);
+
+        // If the book is not a favorite, add it
+        if (!isFavorite) {
+            state.user.favorites.push(book);
+
+            // Update the users in local storage
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            const userIndex = users.findIndex(user => user.email === state.user.email);
+            if (userIndex !== -1) {
+                users[userIndex].favorites.push(book);
+                localStorage.setItem("users", JSON.stringify(users));
+            }
+        } else {
+            // If the book is already a favorite, remove it
+            state.user.favorites = state.user.favorites.filter(favorite => favorite.id !== book.id);
+
+            // Update the users in local storage
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            const userIndex = users.findIndex(user => user.email === state.user.email);
+            if (userIndex !== -1) {
+                users[userIndex].favorites = users[userIndex].favorites.filter(favorite => favorite.id !== book.id);
+                localStorage.setItem("users", JSON.stringify(users));
+            }
+        }
+
+        // Update the user in session storage
+        sessionStorage.setItem("user", JSON.stringify(state.user));
     }
 }
 
