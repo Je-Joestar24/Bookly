@@ -15,7 +15,7 @@ const state = {
             password: 'pass',
             favorites: [],
         }
-    ],books: {
+    ], books: {
         binded: false,
         books: []
     }
@@ -122,7 +122,37 @@ const mutations = {
 
         // Update the user in session storage
         sessionStorage.setItem("user", JSON.stringify(state.user));
-    }
+    },
+    /**
+     * Removes a book from the user's favorites.
+     * 
+     * @param {Object} book - The book object to remove from favorites.
+     */
+    removeFavorite: async (book) => {
+        if (!state.user.isLoggedIn) {
+            console.error("User is not logged in.");
+            return;
+        }
+
+        // Check if the book is in the user's favorites
+        const isFavorite = state.user.favorites.some(favorite => favorite.id === book.id);
+
+        // If the book is a favorite, remove it
+        if (isFavorite) {
+            state.user.favorites = state.user.favorites.filter(favorite => favorite.id !== book.id);
+
+            // Update the users in local storage
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            const userIndex = users.findIndex(user => user.email === state.user.email);
+            if (userIndex !== -1) {
+                users[userIndex].favorites = users[userIndex].favorites.filter(favorite => favorite.id !== book.id);
+                localStorage.setItem("users", JSON.stringify(users));
+            }
+        }
+
+        // Update the user in session storage
+        sessionStorage.setItem("user", JSON.stringify(state.user));
+    },
 }
 
 /**
